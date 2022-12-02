@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body > div {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(230, 212, 188);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+body > div > input,
+body > div > textarea {
+  width: 400px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(94, 83, 68);
+}
+#note_color_container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.note_settings_container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#note_color_container button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#note_color_container button span {
+  color: white;
+  display: none;
+}
+
+.note_settings_container > button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active span {
+  display: inline-block !important;
+}
+
+.note_red {
+  background-color: red;
+}
+
+.note_blue {
+  background-color: blue;
+}
+
+.note_purple {
+  background-color: purple;
+}
+
+.note_orange {
+  background-color: orange;
+}
+
+.note_yellow {
+  background-color: yellow;
+}
+
+#card-container {
+  width: 90%;
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+#card-container .card {
+  width: 250px;
+  min-height: 350px;
+  border-radius: 10px;
+  border: 2px dashed rgb(144, 112, 176);
+}
+
+#card-container .card div:first-child {
+  background-color: rgb(186, 153, 186);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#card-container .card div:last-child {
+  padding: 20px 10px;
+}
+
+svg {
+  cursor: pointer;
+}

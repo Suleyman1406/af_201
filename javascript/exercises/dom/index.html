@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewportasdcasd"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Notepad</h1>
+      <input type="text" id="note_title" placeholder="Note title..." />
+      <textarea
+        name=""
+        id="note_description"
+        cols="30"
+        rows="10"
+        placeholder="Write a note..."
+      ></textarea>
+      <div class="note_settings_container">
+        <div id="note_color_container">
+          <button name="red" class="note_red active"><span>✓</span></button>
+          <button name="blue" class="note_blue"><span>✓</span></button>
+          <button name="purpe" class="note_purple"><span>✓</span></button>
+          <button name="orange" class="note_orange"><span>✓</span></button>
+          <button name="yellow" class="note_yellow"><span>✓</span></button>
+        </div>
+        <button id="save_btn">Save</button>
+      </div>
+      <div id="card-container"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

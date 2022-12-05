@@ -86,20 +86,21 @@ PRODUCTS.forEach((product) => {
   });
 
   cardCountInput.addEventListener("keyup", (event) => {
-    // if (isNaN(event.key)) {
-    //   // return;
-    // }
-    if (event.target.value === "") event.target.value = 0;
     if (event.target.value.startsWith("0")) {
       event.target.value = event.target.value.slice(1);
     }
+    if (event.target.value === "") event.target.value = 0;
 
-    const amount = calculateChange();
+    let amount = calculateChange();
+
+    const basketItem = basket.find((item) => item.product.id === product.id);
+
+    if (basketItem) amount += basketItem.count * product.price;
+
     if (amount < product.price * event.target.value) {
-      event.target.value = amount / product.price;
+      event.target.value = (amount - (amount % product.price)) / product.price;
     }
 
-    console.log(event);
     let basketItemIndex = basket.findIndex(
       (item) => item.product.id === product.id
     );

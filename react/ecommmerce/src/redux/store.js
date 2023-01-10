@@ -1,5 +1,4 @@
 import {  configureStore } from '@reduxjs/toolkit'
-import Favorites from 'pages/favorites'
 import CartSlice from './slice/cart'
 import FavoritesSlice from './slice/favorites'
 

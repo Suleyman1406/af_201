@@ -1,0 +1,19 @@
+.stol {
+    width: 92%;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 710px;
+    padding: 20px 20px 0 20px;
+}
+.addBtn{
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.imgIcons{
+    width: 20px;
+}

@@ -1,0 +1,41 @@
+body {
+    background-image: url(https://wallpaper.dog/large/20476869.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.mainHome {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(207, 216, 220);
+    margin-top: 100px;
+}
+.mainHome h1{
+    font-size: 20px;
+    padding: 20px 20px 0 20px;
+}
+.mainHomebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.mainHomebtn p{
+    margin: 0;
+}
+.mainHomebtn button{
+    margin: 0;
+}
+.imgs img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Image{
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}

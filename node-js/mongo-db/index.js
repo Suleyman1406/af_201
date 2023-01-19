@@ -33,9 +33,7 @@ let PostModel = mongoose.model("Post", PostSchema);
 
 mongoose.set("strictQuery", false);
 mongoose
-  .connect(
-    `mongodb+srv://af201:WapmJpf0KnyYslYz@cluster0.j4khxsk.mongodb.net/?retryWrites=true&w=majority`
-  )
+  .connect(`<mongodbURL>`)
   .then(() => {
     console.log("Connected to MongoDB");
   })
